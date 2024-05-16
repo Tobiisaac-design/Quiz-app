@@ -1,12 +1,25 @@
-.container {
-  width: 20%;
-  max-width: 1200px;
+.container,
+#mycontainer {
+  /* Base styles for small screens */
+  width: 90%;
+  /max-width: 100%;
   margin: 0 auto;
   padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
   background-color: darkblue;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  margin-top: 2%;
+  margin-top: 5%;
+}
+
+#mycontainer {
+  background-color: black;
+  padding-top: 200px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 p {
@@ -15,13 +28,35 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#mycontainer {
-  width: 15.5%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px;
-  padding-top: 150px;
+@media (min-width: 768px) {
+  .container,
+  #mycontainer {
+    width: 20%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container,
+  #mycontainer {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  #mycontainer {
+    width: 60%;
+    max-width: 1200px;
+  }
+}
+
+.btn {
+  border: 10px;
   background-color: black;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  color: white;
+  margin-bottom: 60px;
+  padding-left: 200px;
 }
