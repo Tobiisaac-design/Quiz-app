@@ -1,6 +1,5 @@
 .container,
 #mycontainer {
-  /* Base styles for small screens */
   width: 60%;
   max-width: 100%;
   margin: 0 auto;
